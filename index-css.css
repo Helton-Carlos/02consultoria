@@ -22,15 +22,22 @@ header {
 a {
     text-decoration: none;
     color: #2d2d2d;
-    font-weight: 500;
 }
-
+a:hover {
+    color: #038a98;
+}
 nav,
 ul,
 .rede-social,
 .flex {
     display: flex;
     align-items: center;
+    text-align: left;
+}
+.flex-jb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .midia {
     padding: 0px 2px;
@@ -39,19 +46,22 @@ ul,
 li {
     font-family: "Poppins", sans-serif;
     list-style: none;
+    text-align: left;
     padding: 0px 2px;
     margin: 0px 7px;
+    font-weight: 500;
 }
 .btn-menu {
     padding: 7px 25px;
     background-color: #70c217;
     font-family: "Poppins", sans-serif;
     border-radius: 20px;
+    border: none;
     font-weight: 400;
     color: #fff;
 }
 main {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -77,17 +87,17 @@ h2::after {
     background-color: #038a98;
     margin: 7px auto;
 }
-.contato{
+.contato {
     font-size: 35px;
     font-weight: 800;
 }
-.contato::after{
+.contato::after {
     content: "";
     display: block;
     width: 100px;
     height: 4px;
     background-color: #038a98;
-    margin: 7px ;
+    margin: 7px;
 }
 .bg-claro {
     background-color: rgb(255, 255, 255);
@@ -135,7 +145,7 @@ p {
     margin: 40px auto;
 }
 section {
-    padding: 50px 0px 0px 0px;
+    padding-top: 20px;
 }
 .box-claro-3 {
     width: 320px;
@@ -171,7 +181,9 @@ section {
     box-shadow: 0 0 0.8em #cccccc;
     margin: 20px auto;
 }
-
+.base{
+    width: 25%
+}
 .box-claro-5 {
     width: 45%;
     padding: 10px;
@@ -179,4 +191,55 @@ section {
     border-radius: 10px;
     box-shadow: 0 0 0.8em #cccccc;
     margin: 0px auto 30px auto;
+}
+form{  width: 500px;}
+input {
+    width: 100%;
+    border-radius: 9px;
+    border: 1px solid #2d2d2d;
+    color: gray;
+    padding: 15px 8px;
+    margin: 5px;
+}
+.btn-form {
+    width: 150px;
+    padding: 15px 25px;
+    background-color: #70c217;
+    font-family: "Poppins", sans-serif;
+    border-radius: 25px;
+    border: none;
+    font-weight: 400;
+    margin: 10px 0px 25px 0px;
+    color: #fff;
+}
+footer {
+    background-color: #038a98;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        width: 100%;
+        margin-top: 30px;
+    }
+    main img{display: none;}
+    .box-claro,.box-claro-2,.box-claro-3,.box-claro-5{
+        width: 90%; 
+        height: auto;
+        margin: 10px auto;
+    }
+    .responsivo{
+        margin: 0 auto;
+        text-align: center;
+        flex-direction: column;
+
+    }
+    input{
+        width: 100%;
+    }
+    form{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .base{width: 90%;padding-bottom: 10px;}
 }

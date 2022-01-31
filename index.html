@@ -287,7 +287,7 @@
         <div class="texto-selecao">
           <h2>BLOG</h2>
         </div>
-        <div style="margin: 0 auto; display: flex">
+        <div class="flex-wrap">
           <div class="box-claro-3">
             <iframe
               width="100%"
@@ -357,12 +357,12 @@
       <div class="coluna">
         <div class="texto-selecao">
           <h2>Depoimentos</h2>
-          <p>
+          <p style="padding-bottom:20px">
             O feedback do cliente é o seu <br />
             melhor indicador de qualidade.
           </p>
         </div>
-        <div class="box-claro-4 flex" style="padding: 30px">
+        <div class="box-claro-4 flex responsivo" style="padding: 30px">
           <div class="texto-selecao" style="padding: 10px">
             <img
               src="imagens/diretor-carajas.png"
@@ -406,8 +406,8 @@
           </p>
         </div>
         <div class="flex-wrap container">
-          <div class="box-claro-5 flex">
-            <div class="flex">
+          <div class="box-claro-5">
+            <div class="flex responsivo">
               <img
                 src="imagens/1-persona.png"
                 alt="1-persona"
@@ -438,7 +438,7 @@
             </div>
           </div>
           <div class="box-claro-5 flex">
-            <div class="flex">
+            <div class="flex responsivo">
               <img
                 src="imagens/2-persona.png"
                 alt="2-persona"
@@ -470,7 +470,7 @@
             </div>
           </div>
           <div class="box-claro-5 flex">
-            <div class="flex">
+            <div class="flex responsivo">
               <img
                 src="imagens/3-persona.png"
                 alt="3-persona"
@@ -501,7 +501,7 @@
             </div>
           </div>
           <div class="box-claro-5 flex">
-            <div class="flex">
+            <div class="flex responsivo">
               <img
                 src="imagens/4-persona.png"
                 alt="4-persona"
@@ -538,15 +538,15 @@
       </div>
     </section>
     <section class="bg-claro">
-      <div class="coluna container" style="padding:20px">
-        <div>
-          <h3 class="contato">Contatos</h3>
-          <h4 style="font-size: 25px; padding-top: 20px">
-            Entre em contato com a gente.
-          </h4>
-          <p style="padding-top: 5px">82 9 9336 5995</p>
-          <p style="padding-top: 5px">11 9 6090 4800</p>
-          <p style="padding-top: 5px; padding-bottom: 15px">
+      <div class="container">
+        <h3 class="contato">Contatos</h3>
+      </div>
+      <div class="container flex-jb responsivo">
+        <div class="coluna">
+          <h4 style="font-size: 25px">Entre em contato com a gente.</h4>
+          <p style="font-size: 25px; padding-top: 5px">82 9 9336 5995</p>
+          <p style="font-size: 25px; padding-top: 5px">11 9 6090 4800</p>
+          <p style="font-size: 25px; padding-top: 5px; padding-bottom: 15px">
             contato@o2consultoria.com.br
           </p>
           <div class="rede-social">
@@ -555,7 +555,108 @@
             <img src="imagens/in-pb.png" class="midia" alt="linkedin" />
           </div>
         </div>
+        <form class="coluna">
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            placeholder="Nome Completo"
+          />
+          <input type="email" name="email" id="email" placeholder="E-mail" />
+          <input
+            type="text"
+            name="telefone"
+            id="telefone"
+            placeholder="Telefone"
+          />
+          <input
+            type="text"
+            name="empresa"
+            id="empresa"
+            placeholder="Nome da empresa"
+          />
+          <input
+            type="text"
+            name="Mensagem"
+            id="Mensagem"
+            placeholder="Mensagem"
+          />
+          <button class="btn-form">Enviar</button>
+        </form>
       </div>
     </section>
+    <footer>
+      <div class="container flex-jb responsivo" style="padding: 50px">
+        <div class="coluna base">
+          <div style="padding-bottom: 20px">
+            <img src="imagens/logo-white.png" alt="logo" style="width: 120px" />
+          </div>
+          <p style="font-weight: 300">
+            Vivemos em um mundo em constante mudança e isso não necessariamente
+            é um problema, e isso nos traz a necessidade continua de olharmos o
+            futuro com olhos no presente.
+          </p>
+        </div>
+        <div class="coluna">
+          <p style="padding-bottom: 15px">Menu</p>
+          <a
+            href="#"
+            style="color: #fff"
+            style="margin-bottom: 15px; font-weight: 300"
+            >Home</a
+          >
+          <a
+            href="#"
+            style="color: #fff"
+            style="padding-bottom: 15px; font-weight: 300"
+            >Atuação</a
+          >
+          <a
+            href="#"
+            style="color: #fff"
+            style="padding-bottom: 15px; font-weight: 300"
+            >Sobre Nós</a
+          >
+          <a
+            href="#"
+            style="color: #fff"
+            style="padding-bottom: 15px; font-weight: 300"
+            >Conteúdo</a
+          >
+        </div>
+        <div class="coluna">
+          <p style="padding: 15px 0px">Contatos</p>
+          <span style="color: #fff">contato@o2consultoria.com.br</span>
+          <span style="color: #fff">+ 55 (82) 9 9336 5995</span>
+          <span style="color: #fff">+ 55 (11) 9 6090 4800</span>
+          <span style="color: #fff">Maceió / AL</span>
+          <span style="color: #fff">São Paulo / SP</span>
+        </div>
+      </div>
+      <div style="background-color: #095c65; padding: 5px 0px">
+        <div class="container flex-jb">
+          <div class="flex">
+            <a href="#" style="margin-right: 15px"
+              ><img src="imagens/face-white.png" alt="facebook"
+            /></a>
+            <a href="#" style="margin-right: 15px"
+              ><img src="imagens/inst-white.png" alt="instagram"
+            /></a>
+            <a href="#" style="margin-right: 15px"
+              ><img src="imagens/link-white.png" alt="linkedin"
+            /></a>
+          </div>
+
+          <div style="text-align: center;">
+            <span>© 2021 Todos os direitos reservados</span>
+          </div>
+          <div>
+            <a href="#">
+              <img src="imagens/logo-white-menor.png" alt="logo"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
