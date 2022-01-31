@@ -19,6 +19,9 @@ header {
     display: flex;
     justify-content: space-between;
 }
+.menu-reponsivo {
+    display: none;
+}
 a {
     text-decoration: none;
     color: #2d2d2d;
@@ -105,7 +108,7 @@ h2::after {
     padding: 50px 0px 0px 0px;
 }
 p {
-    font-weight: 600;
+    font-weight: 500;
 }
 .coluna {
     display: flex;
@@ -181,8 +184,8 @@ section {
     box-shadow: 0 0 0.8em #cccccc;
     margin: 20px auto;
 }
-.base{
-    width: 25%
+.base {
+    width: 25%;
 }
 .box-claro-5 {
     width: 45%;
@@ -192,11 +195,13 @@ section {
     box-shadow: 0 0 0.8em #cccccc;
     margin: 0px auto 30px auto;
 }
-form{  width: 500px;}
+form {
+    width: 500px;
+}
 input {
     width: 100%;
-    border-radius: 9px;
-    border: 1px solid #2d2d2d;
+    border-radius: 15px;
+    border: 1px solid gray;
     color: gray;
     padding: 15px 8px;
     margin: 5px;
@@ -212,34 +217,65 @@ input {
     margin: 10px 0px 25px 0px;
     color: #fff;
 }
+
 footer {
     background-color: #038a98;
     color: #fff;
 }
 
 @media (max-width: 600px) {
+    .menu-desktop {
+        display: none;
+    }
+    .menu-reponsivo {
+        display: block;
+    }
     h1 {
         width: 100%;
-        margin-top: 30px;
+        margin-top: 0px;
     }
-    main img{display: none;}
-    .box-claro,.box-claro-2,.box-claro-3,.box-claro-5{
-        width: 90%; 
+    main img,.menu-reponsivo-modal {
+        display: none;
+    }
+    .box-claro,
+    .box-claro-2,
+    .box-claro-3,
+    .box-claro-5 {
+        width: 90%;
         height: auto;
         margin: 10px auto;
     }
-    .responsivo{
+    .responsivo {
         margin: 0 auto;
         text-align: center;
         flex-direction: column;
-
     }
-    input{
+    input {
         width: 100%;
     }
-    form{
+    form {
         width: 100%;
         margin-top: 10px;
     }
-    .base{width: 90%;padding-bottom: 10px;}
+    .base {
+        width: 90%;
+        padding-bottom: 10px;
+    }
+    .modal {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        background-color: #000;
+    }
+    ul {
+        padding-top: 50px;
+    }
+    .modal li a {
+        color: #fff;
+        z-index: 2;
+        padding: 20px;
+    }
 }

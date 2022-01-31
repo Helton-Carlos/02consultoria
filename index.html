@@ -16,8 +16,8 @@
   <body>
     <header>
       <div class="container">
-        <a href="#"> <img src="imagens/logo.png" alt="logo" /></a>
-        <nav>
+        <a href="#"><img src="imagens/logo.png" alt="logo" /></a>
+        <nav class="menu-desktop">
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Atuação</a></li>
@@ -30,6 +30,23 @@
               <img src="imagens/linkd.png" class="midia" alt="linkedin" />
             </div>
           </ul>
+        </nav>
+        <nav class="menu-reponsivo">
+          <img src="imagens/btn-menu.png" alt="menu" onclick="abrirModal()">
+          <nav class="menu-reponsivo-modal" >
+            <ul class="coluna modal">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Atuação</a></li>
+              <li><a href="#">Sobre Nós</a></li>
+              <li><a href="#">Conteúdo</a></li>
+              <a href="#" class="btn-menu">Contato</a>
+              <div class="rede-social">
+                <img src="imagens/face-white.png" class="midia" />
+                <img src="imagens/inst-white.png" alt="instagram" class="midia" />
+                <img src="imagens/link-white.png" class="midia" alt="linkedin" />
+              </div>
+            </ul>
+          </nav>
         </nav>
       </div>
     </header>
@@ -658,5 +675,6 @@
         </div>
       </div>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
