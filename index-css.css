@@ -234,7 +234,7 @@ footer {
         width: 100%;
         margin-top: 0px;
     }
-    main img,.menu-reponsivo-modal {
+    main img,#abrir{
         display: none;
     }
     .box-claro,
@@ -273,9 +273,24 @@ footer {
     ul {
         padding-top: 50px;
     }
+    .modal li {
+        padding: 10px;
+    }
     .modal li a {
         color: #fff;
         z-index: 2;
         padding: 20px;
     }
+    .modal li a:hover {
+        color: #70c217
+    }
+    #fechar{
+        position: absolute;
+        top:0;
+        left: 0;
+        padding: 20px;
+        color:#fff;
+        font-size: 35px;
+    }
+    .midia{margin-top: 20px;}
 }
