@@ -223,7 +223,7 @@ footer {
     color: #fff;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .menu-desktop {
         display: none;
     }
@@ -232,6 +232,7 @@ footer {
     }
     h1 {
         width: 100%;
+        font-weight:800;
         margin-top: 0px;
     }
     main img,#abrir{
