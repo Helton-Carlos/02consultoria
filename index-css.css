@@ -222,20 +222,28 @@ footer {
     background-color: #038a98;
     color: #fff;
 }
-
+.marcas-mobile {
+    display: none;
+}
 @media (max-width: 700px) {
-    .menu-desktop {
+    .menu-desktop,
+    .marcas-desktop {
         display: none;
+    }
+    .marcas-mobile {
+        display: flex;
+        padding: 10px 0px;
     }
     .menu-reponsivo {
         display: block;
     }
     h1 {
         width: 100%;
-        font-weight:800;
+        font-weight: 800;
         margin-top: 0px;
     }
-    main img,#abrir{
+    main img,
+    #abrir {
         display: none;
     }
     .box-claro,
@@ -284,15 +292,17 @@ footer {
         font-size: 35px;
     }
     .modal li a:hover {
-        color: #70c217
+        color: #70c217;
     }
-    #fechar{
+    #fechar {
         position: absolute;
-        top:0;
+        top: 0;
         left: 0;
         padding: 20px;
-        color:#fff;
+        color: #fff;
         font-size: 35px;
     }
-    .midia{margin-top: 30px;}
+    .midia {
+        margin-top: 30px;
+    }
 }
