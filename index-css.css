@@ -126,7 +126,9 @@ p {
     box-shadow: 0 0 0.7em #cccccc;
     margin: 25px 9px 0px 9px;
 }
-
+#sobre{
+    padding-bottom: 50px;
+}
 .box-claro-2 {
     width: 220px;
     height: 180px;
