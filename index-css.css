@@ -126,23 +126,74 @@ p {
     box-shadow: 0 0 0.7em #cccccc;
     margin: 25px 9px 0px 9px;
 }
-#sobre{
+#sobre {
     padding-bottom: 50px;
 }
+
 .box-claro-2 {
     width: 220px;
     height: 180px;
-    padding: 40px 35px;
+    padding: 10px 0px;
     text-align: center;
     background-color: #ffffff;
     border-radius: 10px;
     margin: 5px;
     box-shadow: 0 0 0.8em #cccccc;
 }
+.blue {
+    max-width: 80%;
+    margin: 8px auto;
+    background-color: #0fb2e3;
+    color: #fff;
+}
+.blue-circulo{
+    padding: 4px 0px 1px 0px;
+}
+/*
+.blue-circulo::before {
+    content: "";
+    padding: 5px 5px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #0fb2e3;
+    margin: 5px;
+}*/
 .box-claro-2 img {
     position: relative;
     top: 45%;
     transform: translateY(-50%);
+}
+
+.flip-container {
+    width: 220px;
+    height: 180px;
+    margin-top: 15px;
+    perspective: 1000px;
+}
+
+.flipper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-container:hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.back {
+    transform: rotateY(180deg);
 }
 .flex-wrap {
     display: flex;
@@ -151,6 +202,24 @@ p {
 }
 section {
     padding-top: 20px;
+}
+#circulo-um {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #4e4e4e;
+    margin: 5px;
+}
+
+#circulo-dois {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #c4c4c4;
+    margin: 5px;
+}
+#etapa-dois {
+    display: none;
 }
 .box-claro-3 {
     width: 320px;
@@ -224,9 +293,11 @@ footer {
     background-color: #038a98;
     color: #fff;
 }
+
 .marcas-mobile {
     display: none;
 }
+
 @media (max-width: 700px) {
     .menu-desktop,
     .marcas-desktop {
