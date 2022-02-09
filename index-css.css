@@ -146,25 +146,14 @@ p {
     background-color: #0fb2e3;
     color: #fff;
 }
-.blue-circulo{
+.blue-circulo {
     padding: 4px 0px 1px 0px;
 }
-/*
-.blue-circulo::before {
-    content: "";
-    padding: 5px 5px;
-    width: 2px;
-    height: 2px;
-    border-radius: 50%;
-    background-color: #0fb2e3;
-    margin: 5px;
-}*/
 .box-claro-2 img {
     position: relative;
     top: 45%;
     transform: translateY(-50%);
 }
-
 .flip-container {
     width: 220px;
     height: 180px;
@@ -299,6 +288,9 @@ footer {
 }
 
 @media (max-width: 700px) {
+    .box-claro-2 {
+        padding: 50px 0px;
+    }
     .menu-desktop,
     .marcas-desktop {
         display: none;
