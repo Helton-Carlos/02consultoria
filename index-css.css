@@ -63,6 +63,10 @@ li {
     font-weight: 400;
     color: #fff;
 }
+.btn-menu:hover {
+    background-color: #038a98;
+    color: #fff;
+}
 main {
     max-width: 100%;
     display: flex;
@@ -107,6 +111,11 @@ h2::after {
     width: 100%;
     padding: 50px 0px 0px 0px;
 }
+#depoimentos {
+    background-image: url("imagens/bg-depoimentos.png");
+    width: 100%;
+    height: 100%;
+}
 p {
     font-weight: 500;
 }
@@ -129,7 +138,14 @@ p {
 #sobre {
     padding-bottom: 50px;
 }
-
+.link-footer {
+    font-weight: 500;
+    padding-bottom: 5px;
+    color:#fff
+}
+.link-footer:hover {
+    color: #70c217;
+}
 .box-claro-2 {
     width: 220px;
     height: 180px;
@@ -160,7 +176,6 @@ p {
     margin-top: 15px;
     perspective: 1000px;
 }
-
 .flipper {
     position: relative;
     width: 100%;
@@ -168,11 +183,9 @@ p {
     transition: transform 0.8s;
     transform-style: preserve-3d;
 }
-
 .flip-container:hover .flipper {
     transform: rotateY(180deg);
 }
-
 .front,
 .back {
     position: absolute;
@@ -180,7 +193,6 @@ p {
     height: 100%;
     backface-visibility: hidden;
 }
-
 .back {
     transform: rotateY(180deg);
 }
@@ -235,7 +247,6 @@ section {
     background-position: center;
     padding: 50px 0px 0px 0px;
 }
-
 .box-claro-4 {
     width: 80%;
     padding: 20px;
