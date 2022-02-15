@@ -34,14 +34,9 @@ function abrirEtapaDois(){
 
 var slider_content = document.getElementById('box');
 
-// contain images in an array
 var image = ['2', '3', '4','5','6','7', '8', '9','10','11','12', '13', '14','15','16','17', '18', '19','20','1'];
 
 var i = image.length;
-
-
-// function for next slide 
-
 function clickDireita(){
   if (i<image.length) {
       i= i+1;
@@ -50,9 +45,6 @@ function clickDireita(){
   }
     slider_content.innerHTML = "<img src='imagens/"+image[i-1]+".png'>";
 }
-
-
-// function for prew slide
 
 function clickEsquerda(){
 

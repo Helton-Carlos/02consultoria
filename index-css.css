@@ -141,7 +141,7 @@ p {
 .link-footer {
     font-weight: 500;
     padding-bottom: 5px;
-    color:#fff
+    color: #fff;
 }
 .link-footer:hover {
     color: #70c217;
@@ -229,6 +229,11 @@ section {
     box-shadow: 0 0 0.8em #cccccc;
     margin: 10px 10px;
 }
+
+.number {
+    font-size: 25px;
+    padding-top: 5px;
+}
 .titulo-claro-3::before {
     content: "";
     padding: 0px 2px;
@@ -298,14 +303,20 @@ footer {
 .marcas-mobile {
     display: none;
 }
-@media(max-width: 1400px){
-    #caixas{
+@media (max-width: 1400px) {
+    #caixas {
         display: flex;
         flex-wrap: wrap;
     }
+    .box-claro-5 {
+        width: 100%;
+        height: 100%;
+    }
 }
 @media (max-width: 700px) {
- 
+    .number {
+        font-size: 18px;
+    }
     .menu-desktop,
     .marcas-desktop {
         display: none;
@@ -333,7 +344,7 @@ footer {
         height: auto;
         margin: 10px auto;
     }
-    .box-claro-2{
+    .box-claro-2 {
         width: 90%;
     }
     .responsivo {
