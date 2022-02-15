@@ -127,8 +127,8 @@ p {
     text-align: center;
 }
 .box-claro {
-    width: 230px;
-    height: 260px;
+    width: 220px;
+    height: 275px;
     padding: 15px;
     background-color: #ffffff;
     border-radius: 10px;
@@ -303,7 +303,7 @@ footer {
 .marcas-mobile {
     display: none;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
     #caixas {
         display: flex;
         flex-wrap: wrap;
