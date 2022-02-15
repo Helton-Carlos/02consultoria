@@ -14,7 +14,7 @@ header {
     margin-top: 15px;
 }
 .container {
-    width: 94%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -73,11 +73,11 @@ main {
     justify-content: space-between;
 }
 .caixa-texto {
-    padding: 50px;
+    padding: 50px 0px;
 }
 h1 {
     color: #038a98;
-    font-size: 2.8em;
+    font-size: 2.5em;
     margin-top: 90px;
 }
 h2 {
@@ -128,12 +128,12 @@ p {
 }
 .box-claro {
     width: 230px;
-    height: 270px;
+    height: 260px;
     padding: 15px;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 0 0.7em #cccccc;
-    margin: 25px 9px 0px 9px;
+    margin-top: 25px;
 }
 #sobre {
     padding-bottom: 50px;
@@ -248,7 +248,7 @@ section {
     padding: 50px 0px 0px 0px;
 }
 .box-claro-4 {
-    width: 80%;
+    width: 100%;
     padding: 20px;
     background-color: #ffffff;
     border-radius: 10px;
@@ -259,12 +259,13 @@ section {
     width: 25%;
 }
 .box-claro-5 {
-    width: 45%;
-    padding: 10px;
+    width: 50%;
+    height: 275px;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 0 0.8em #cccccc;
-    margin: 0px auto 30px auto;
+    margin: 10px 10px;
+    padding: 10px;
 }
 form {
     width: 500px;
@@ -297,7 +298,12 @@ footer {
 .marcas-mobile {
     display: none;
 }
-
+@media(max-width: 1400px){
+    #caixas{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
 @media (max-width: 700px) {
  
     .menu-desktop,
