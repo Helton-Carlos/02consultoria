@@ -345,7 +345,8 @@ footer {
         margin: 10px auto;
     }
     .box-claro-2 {
-        width: 90%;
+        width: 100%;
+        height: 160px;
     }
     .responsivo {
         margin: 0 auto;
